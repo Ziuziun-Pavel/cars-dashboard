@@ -1,0 +1,26 @@
+{
+  "name": "acer/cars",
+  "license": "proprietary",
+  "autoload": {
+    "psr-4": {
+      "app\\": "app/"
+    },
+    "classmap": [
+      "app/core/Application.php",
+      "app/core/Model.php",
+      "config/Router.php",
+      "config/DB.php"
+    ]
+  },
+  "authors": [
+    {
+      "name": "Pavel",
+      "email": "zuzunpavel@gmail.com"
+    }
+  ],
+  "require": {
+    "ext-mysqli": "*",
+    "ext-pdo": "*",
+    "twig/twig": "3.*"
+  }
+}
