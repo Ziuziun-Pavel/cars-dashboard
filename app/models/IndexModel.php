@@ -33,9 +33,7 @@ class IndexModel extends Model
         $stmt->bindValue(':date', $date,PDO::PARAM_STR);
 
         $stmt->execute();
-
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
-
         $result = $row['AVG(price)'];
 
         return $result;
@@ -55,6 +53,7 @@ class IndexModel extends Model
             $stmt->execute();
             $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
             $result = $rows;
+
             return $result;
     }
 
@@ -72,6 +71,7 @@ class IndexModel extends Model
         $stmt->execute();
         $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
         $result = $rows;
+
         return $result;
     }
 }
